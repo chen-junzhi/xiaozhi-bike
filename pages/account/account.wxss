@@ -1,0 +1,43 @@
+/* pages/account/account.wxss */
+page{
+  background-image: url("//bpic.588ku.com//back_water_img/18/10/23/190f4490bf576bf2ed05111d9a4e3b3e63.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.user-info{
+    /*background-color: #fff;*/
+    padding-top: 60rpx;
+    color: #eee;
+}
+.user-info image{
+    display: block;
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+    margin: 0 auto 40rpx;
+    box-shadow: 0 0 20rpx rgba(0,0,0,.2)
+}
+.user-info text{
+    display: block;
+    text-align: center;
+    padding: 30rpx 0;
+    margin-bottom: 30rpx;
+}
+.btn-login{
+    position: absolute;
+    bottom: 60rpx;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+}
+.gray{
+    background-color: #ccc;
+}
+.tapbar {
+  justify-content: center;
+  color: #0576f5;
+  background: none;
+}
+.container {
+  background-color: rgba(0,0,0,.4);
+}

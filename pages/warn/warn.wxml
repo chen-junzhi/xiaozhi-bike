@@ -1,0 +1,30 @@
+<!--pages/warn/warn.wxml-->
+<view class="container">
+    <view class="choose">
+        <view class="title">请选择故障类型</view> 
+        <checkbox-group bindchange="checkboxChange" class="choose-grids">
+            <!-- itemsValue是data对象里定义的数组，item代表数组的每一项，此处语法为循环输出数组的每一项并渲染到每一个复选框。下面还有类似语法 -->
+            <block wx:for="{{itemsValue}}" wx:key="{{item}}">
+                <view class="grid">
+                    <checkbox value="{{item.value}}" checked="{{item.checked}}" color="{{item.color}}" />{{item.value}}
+                </view>
+            </block>
+        </checkbox-group>        
+    </view>
+    <view class="action">
+        <view class="title">拍摄单车周围环境，便于维修师傅找车</view>
+        <view class="action-photo">
+        <block wx:for="{{picUrls}}" wx:key="{{item}}" wx:index="{{index}}">
+            <image src="{{item}}" data-index="{{index}}" bindtap='priview'><icon type="cancel" data-index="{{index}}" color="red" size="18" class ="del" catchtap="delPic" /></image>
+        </block>
+            <text class="add" bindtap="bindCamera">{{actionText}}</text>
+        </view>
+        <view class="action-input">
+            <input bindinput="numberChange" name="number" placeholder="车牌号（车牌损坏不用填）" />
+            <input bindinput="descChange" name="desc" placeholder="备注" />            
+        </view>
+        <view class="action-submit">
+            <button class="submit-btn" type="default" loading="{{loading}}" bindtap="formSubmit" style="background-color: {{btnBgc}}; color: {{btnCol}}">提交</button>
+        </view>
+    </view>
+</view>

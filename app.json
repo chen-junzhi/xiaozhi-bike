@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/index/index", 
+    "pages/warn/warn", 
+    "pages/scanresult/scanresult", 
+    "pages/billing/billing", 
+    "pages/register/register",
+    "pages/account/account",
+    "pages/wallet/wallet",
+    "pages/charge/charge",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#e2de10",
+    "navigationBarTitleText": "小志单车",
+    "navigationBarTextStyle":"black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "cloud": true
+}

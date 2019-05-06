@@ -1,0 +1,22 @@
+/* pages/register/register.wxss */
+.mg-8 {
+  margin: .8em;
+}
+
+.page__bd {
+  background-color: #000;
+  color: #999;
+  padding: 40rpx 20rpx;
+  font-size: 30rpx;
+}
+
+.page__bd .state {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.page__bd .state .active {
+  color: #31bb40;
+}
+
